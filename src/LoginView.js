@@ -18,8 +18,8 @@ export default class LoginView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: null,
-            password: null,
+            username: 'prueba@ucol.mx',
+            password: 'prueba',
         };
     }
     ingresar = () => {

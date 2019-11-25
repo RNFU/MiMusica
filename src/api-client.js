@@ -30,7 +30,7 @@ function getMusicData(){
             token: global.token,
         }),
     })
-    .then(response => reponse.json())
+    .then(response => response.json())
     .then(data => data.topartists.artist)
     .then(artists => artists.map(artist => {
         return {

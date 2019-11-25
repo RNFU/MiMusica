@@ -13,7 +13,7 @@ export default class ArtistList extends Component<Props>{
         super();
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
-            DataSource: ds
+            dataSource: ds
         }
     }
     componentDidMount(){
@@ -36,9 +36,9 @@ export default class ArtistList extends Component<Props>{
  render() {
         return (
             <ListView
-                enableEmptySections={true}
+                enableEmptySections = {true}
                 dataSource={this.state.dataSource}
-                renderRow={(artist) => {
+                renderRow={(artist  ) => {
                     return (
                         <TouchableOpacity onPress={() => this.handlePress(artist)}>
                             <ArtistBox artist={artist} />

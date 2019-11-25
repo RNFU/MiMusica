@@ -4,7 +4,7 @@ import {
     View,
  } from 'react-native';
 
- import { getMusicaData } from './api-client'
+ import { getMusicData } from './api-client'
 //import console = require('console');
 
 import ArtistList from './ArtistList'
@@ -13,7 +13,8 @@ import ArtistList from './ArtistList'
          artists: null
      }
      componentDidMount() {
-         getMusicaData().then(data => this.setState ({artists:data}))
+         getMusicData().then(data => this.setState ({artists:data}))
+
      }
 
      render(){
